@@ -54,7 +54,7 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 
 #### Also correct!
 
-Alt text attributes can be included but left empty and screen readers will skip the image. Use this method when an image is decorative and reading the alt text doesn't add value for the user.
+Alt text attributes can be included but have a null value, and screen readers will skip the image. Use this method when an image is decorative and reading the alt text doesn't add value for the user.
 
 ```html
 <img src="https://picsum.photos/840/472" alt="" />
