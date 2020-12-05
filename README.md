@@ -10,5 +10,5 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 ---
 
-Cheers!
+Cheers!  
 Angela :two_hearts:
