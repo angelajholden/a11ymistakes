@@ -27,10 +27,11 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 | Large Text                |  3:1  | 4.5:1 |
 | UI Components             |  3:1  |  NA   |
 
-| Text Size :sparkles:                     | Point |  Pixel  |
-| :--------------------------------------- | :---: | :-----: |
-| Normal Text (normal font weight)         | 12pt  |  16px   |
-| Large Text (bold font weight, or larger) | 14pt  | 18.66px |
+| Text Size :sparkles:             | Point |  Pixel  |
+| :------------------------------- | :---: | :-----: |
+| Normal Text (normal font weight) | 12pt  |  16px   |
+| Large Text (bold font weight)    | 14pt  | 18.66px |
+| Large Text (normal font weight)  | 18pt  |  24px   |
 
 ### 2) Missing alternative text for images
 
