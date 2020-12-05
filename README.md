@@ -6,6 +6,8 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 ### 1) Low contrast text
 
+---
+
 ### 2) Missing alternative text for images
 
 #### Correct - image with alt text
@@ -30,18 +32,22 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ```
 
+---
+
 ### 3) Empty links
 
 ```
 <a href="https://webaim.org">Click Me</a>
 ```
 
+---
+
 ### 4) Missing form input labels
 
 Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribute on its `<input>`.
 
 ```
-<label class="screen-reader-text" for="name">Full Name</label>
+<label for="name">Full Name</label>
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
 ```
 
@@ -70,17 +76,23 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 </label>
 ```
 
+---
+
 ### 5) Empty buttons
 
 ```
 <button>Click Me</button>
 ```
 
+---
+
 ### 6) Missing document language
 
 ```
 <html lang="en"></html>
 ```
+
+---
 
 ### Resources
 
