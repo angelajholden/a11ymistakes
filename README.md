@@ -40,6 +40,11 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribute on its `<input>`.
 
+```
+<label class="screen-reader-text" for="name">Full Name</label>
+<input id="name" type="text" name="fullname" placeholder="Full Name" />
+```
+
 When you want to hide the form label, use screen reader friendly CSS. Using `display: none;` and `visibility: hidden;` removes it from the DOM and screen readers won't read them to the user.
 
 ```
