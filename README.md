@@ -24,14 +24,12 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ```
 <img src="https://picsum.photos/1024/768" alt="" />
-
 ```
 
 #### Incorrect - image without alt text
 
 ```
 <img src="https://picsum.photos/1024/768" />
-
 ```
 
 ---
