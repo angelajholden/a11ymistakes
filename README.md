@@ -1,6 +1,6 @@
 # A11y Mistakes
 
-## The six most common accessibility mistakes and how to fix them
+## The six most common accessibility mistakes and how to avoid them
 
 In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites and compiled a list of the six most common accessibility mistakes. This guide will illustrate what they are and how to fix them.
 
@@ -25,8 +25,11 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 #### Correct - image with alt text
 
-```
-<img src="https://picsum.photos/840/472" alt="Random placeholder photo from Lorem Picsum" />
+```html
+<img
+    src="https://picsum.photos/840/472"
+    alt="Random placeholder photo from Lorem Picsum"
+/>
 ```
 
 ![Random placeholder photo from Lorem Picsum](https://picsum.photos/838/471)
@@ -35,13 +38,13 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 Alt text attributes can be included but left empty and screen readers will skip the image altogether. Use this method when an image is decorative and not needed to communicate the narrative of a webpage.
 
-```
+```html
 <img src="https://picsum.photos/840/472" alt="" />
 ```
 
 #### Incorrect - image without alt text
 
-```
+```html
 <img src="https://picsum.photos/840/472" />
 ```
 
@@ -49,7 +52,7 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ### 3) Empty links
 
-```
+```html
 <a href="https://webaim.org">Web AIM</a>
 ```
 
@@ -59,32 +62,34 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribute on its `<input>`.
 
-```
+```html
 <label for="name">Full Name</label>
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
 ```
 
-When you want to hide the form label, use screen reader friendly CSS. Using `display: none;` and `visibility: hidden;` removes it from the DOM and screen readers won't read them to the user.
+When you want to hide the form label, use screen reader friendly CSS.  
+Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
 
+```css
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    clip: rect(0 0 0 0);
+}
 ```
-<style>
-    .screen-reader-text {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1;
-        clip: rect(0 0 0 0);
-    }
-</style>
 
+```html
 <label class="screen-reader-text" for="name">Full Name</label>
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
 ```
 
 If you aren't hiding form labels, they can also be wrapped around the form element.
 
-```
-<label for="name">Full Name
+```html
+<label for="name"
+    >Full Name
     <input id="name" type="text" name="fullname" placeholder="Full Name" />
 </label>
 ```
@@ -93,7 +98,7 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 
 ### 5) Empty buttons
 
-```
+```html
 <button>Read More</button>
 ```
 
@@ -101,7 +106,7 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 
 ### 6) Missing document language
 
-```
+```html
 <html lang="en"></html>
 ```
 
