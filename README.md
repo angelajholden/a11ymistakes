@@ -42,7 +42,7 @@ Alt text attributes can be included but left empty and screen readers will skip 
 #### Incorrect - image without alt text
 
 ```
-<img src="https://picsum.photos/1024/768" />
+<img src="https://picsum.photos/840/472" />
 ```
 
 ---
@@ -50,7 +50,7 @@ Alt text attributes can be included but left empty and screen readers will skip 
 ### 3) Empty links
 
 ```
-<a href="https://webaim.org">Click Me</a>
+<a href="https://webaim.org">Web AIM</a>
 ```
 
 ---
@@ -94,7 +94,7 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 ### 5) Empty buttons
 
 ```
-<button>Click Me</button>
+<button>Read More</button>
 ```
 
 ---
