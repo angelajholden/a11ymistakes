@@ -46,11 +46,9 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 />
 ```
 
-![Random placeholder photo from Lorem Picsum](https://picsum.photos/838/471)
-
 #### Also correct!
 
-Alt text attributes can be included but left empty and screen readers will skip the image altogether. Use this method when an image is decorative and not needed to communicate the narrative of a webpage.
+Alt text attributes can be included but left empty and screen readers will skip the image. Use this method when an image is decorative and reading the alt text doesn't add value for the user.
 
 ```html
 <img src="https://picsum.photos/840/472" alt="" />
@@ -129,8 +127,11 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 ### Resources
 
 -   https://webaim.org/projects/million/
+-   https://webaim.org/resources/contrastchecker/
 
 ---
+
+I encourage you to continue reading and learning about accessibilty. This topic goes far beyond what is outlined in this guide. Knowing that 98.1% of the websites surveyed had a detecable error implies that fixing these six things could have a vast improvement on overall web accessibility.
 
 Cheers!  
 Angela :two_hearts:
