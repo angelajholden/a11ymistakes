@@ -17,7 +17,7 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 ### 1) Low contrast text
 
-:bar_chart:&nbsp; 86.3% of homepages in 2020
+:bar_chart: 86.3% of homepages in 2020
 
 From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/):
 
@@ -41,7 +41,7 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 
 ### 2) Missing alternative text for images
 
-:bar_chart:&nbsp; 66% of homepages in 2020
+:bar_chart: 66% of homepages in 2020
 
 #### Correct - image with alt text
 
@@ -70,7 +70,7 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ### 3) Empty links
 
-:bar_chart:&nbsp; 59.9% of homepages in 2020
+:bar_chart: 59.9% of homepages in 2020
 
 ```html
 <a href="https://webaim.org">Web AIM</a>
@@ -80,7 +80,7 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ### 4) Missing form input labels
 
-:bar_chart:&nbsp; 53.8% of homepages in 2020
+:bar_chart: 53.8% of homepages in 2020
 
 Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribute on its `<input>`.
 
@@ -120,7 +120,7 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 
 ### 5) Empty buttons
 
-:bar_chart:&nbsp; 28.7% of homepages in 2020
+:bar_chart: 28.7% of homepages in 2020
 
 ```html
 <button>Read More</button>
@@ -130,7 +130,7 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 
 ### 6) Missing document language
 
-:bar_chart:&nbsp; 28% of homepages in 2020
+:bar_chart: 28% of homepages in 2020
 
 ```html
 <html lang="en"></html>
