@@ -21,16 +21,16 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 >
 > Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.
 
-| Contrast Ratio                        |  AA   |  AAA  |
+| Contrast Ratio :sparkles:             |  AA   |  AAA  |
 | :------------------------------------ | :---: | :---: |
 | Normal Text                           | 4.5:1 |  7:1  |
 | Large Text                            |  3:1  | 4.5:1 |
 | Graphical Objects &amp; UI Components |  3:1  |  NA   |
 
-| Text Size                                | Points | Pixels  |
-| :--------------------------------------- | :----: | :-----: |
-| Normal Text (normal font weight)         |  12pt  |  16px   |
-| Large Text (bold font weight, or larger) |  14pt  | 18.66px |
+| Text Size :sparkles:                     | Point |  Pixel  |
+| :--------------------------------------- | :---: | :-----: |
+| Normal Text (normal font weight)         | 12pt  |  16px   |
+| Large Text (bold font weight, or larger) | 14pt  | 18.66px |
 
 ### 2) Missing alternative text for images
 
