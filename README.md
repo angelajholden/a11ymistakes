@@ -15,11 +15,22 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 ### 1) Low contrast text
 
+From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/):
+
 > WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
 >
 > Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.
 
----
+| Contrast Ratio                        |  AA   |  AAA  |
+| :------------------------------------ | :---: | :---: |
+| Normal Text                           | 4.5:1 |  7:1  |
+| Large Text                            |  3:1  | 4.5:1 |
+| Graphical Objects &amp; UI Components |  3:1  |  NA   |
+
+| Text Size                                | Points | Pixels  |
+| :--------------------------------------- | :----: | :-----: |
+| Normal Text (normal font weight)         |  12pt  |  16px   |
+| Large Text (bold font weight, or larger) |  14pt  | 18.66px |
 
 ### 2) Missing alternative text for images
 
