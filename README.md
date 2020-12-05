@@ -33,6 +33,8 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 | Large Text (bold font weight)    | 14pt  | 18.66px |
 | Large Text (normal font weight)  | 18pt  |  24px   |
 
+---
+
 ### 2) Missing alternative text for images
 
 #### Correct - image with alt text
