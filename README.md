@@ -26,17 +26,17 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 #### Correct - image with alt text
 
 ```
-<img src="https://picsum.photos/1024/768" alt="Random placeholder photo from Lorem Picsum" />
+<img src="https://picsum.photos/840/472" alt="Random placeholder photo from Lorem Picsum" />
 ```
 
-![Random placeholder photo from Lorem Picsum](https://picsum.photos/1024/768)
+![Random placeholder photo from Lorem Picsum](https://picsum.photos/840/472)
 
 #### Also correct!
 
 Alt text attributes can be included but left empty and screen readers will skip the image altogether. Use this method when an image is decorative and not needed to communicate the narrative of a webpage.
 
 ```
-<img src="https://picsum.photos/1024/768" alt="" />
+<img src="https://picsum.photos/840/472" alt="" />
 ```
 
 #### Incorrect - image without alt text
