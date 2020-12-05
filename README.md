@@ -2,6 +2,8 @@
 
 ## The six most common accessibility mistakes and how to avoid them
 
+Data for this guide courtesy [© WebAIM - The WebAIM Million](https://webaim.org/projects/million/)
+
 In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites and compiled a list of the six most common accessibility mistakes. This guide will illustrate what they are and how to fix them.
 
 1. [Low contrast text](https://github.com/angelajholden/a11ymistakes#1-low-contrast-text)
