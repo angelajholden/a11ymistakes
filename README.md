@@ -17,6 +17,8 @@ In 2019 and 2020, WebAIM surveyed the homepages for the top 1,000,000 websites a
 
 ### 1) Low contrast text
 
+:bar_chart:&nbsp; 86.3% of homepages in 2020
+
 From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/):
 
 > WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
@@ -38,6 +40,8 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 ---
 
 ### 2) Missing alternative text for images
+
+:bar_chart:&nbsp; 66% of homepages in 2020
 
 #### Correct - image with alt text
 
@@ -66,6 +70,8 @@ Alt text attributes can be included but left empty and screen readers will skip 
 
 ### 3) Empty links
 
+:bar_chart:&nbsp; 59.9% of homepages in 2020
+
 ```html
 <a href="https://webaim.org">Web AIM</a>
 ```
@@ -73,6 +79,8 @@ Alt text attributes can be included but left empty and screen readers will skip 
 ---
 
 ### 4) Missing form input labels
+
+:bar_chart:&nbsp; 53.8% of homepages in 2020
 
 Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribute on its `<input>`.
 
@@ -112,6 +120,8 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 
 ### 5) Empty buttons
 
+:bar_chart:&nbsp; 28.7% of homepages in 2020
+
 ```html
 <button>Read More</button>
 ```
@@ -119,6 +129,8 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 ---
 
 ### 6) Missing document language
+
+:bar_chart:&nbsp; 28% of homepages in 2020
 
 ```html
 <html lang="en"></html>
