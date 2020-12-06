@@ -142,7 +142,7 @@ There are three button types; submit and reset (forms), and button. The `type="b
 <button type="button">Read More</button>
 ```
 
-And like links, it's common to use icon fonts and SVGs with the button element. Make sure to add button text and hide it with screen reader friendly CSS.
+Like links, it's common to use icon fonts and SVGs with the button element. Make sure to add button text and hide it with screen reader friendly CSS.
 
 <!-- prettier-ignore-start -->
 ```html
@@ -158,6 +158,8 @@ And like links, it's common to use icon fonts and SVGs with the button element. 
 ### 6) Missing document language
 
 :bar_chart: 28% of homepages in 2020
+
+Add a language attribute to the `<html>` element so screen readers know which language to use when reading the site.
 
 ```html
 <html lang="en"></html>
