@@ -37,6 +37,10 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 | Large Text (bold font weight)    | 14pt  | 18.66px |
 | Large Text (normal font weight)  | 18pt  |  24px   |
 
+##### More Info
+
+-   https://css-tricks.com/accessible-font-sizing-explained/
+
 ---
 
 ### 2) Missing alternative text for images
@@ -64,6 +68,10 @@ Alt text attributes can be included but have a null value, and screen readers wi
 ```html
 <img src="https://picsum.photos/840/472" />
 ```
+
+##### More Info
+
+-   https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt
 
 ---
 
@@ -98,6 +106,11 @@ It's common to add icon fonts or SVGs to links and omit the text. Wrap the link 
 ```
 <!-- prettier-ignore-end -->
 
+##### More Info
+
+-   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+-   https://www.w3.org/TR/wai-aria-1.1/#aria-label
+
 ---
 
 ### 4) Missing form input labels
@@ -111,8 +124,7 @@ Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribut
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
 ```
 
-When you want to hide the form label, use screen reader friendly CSS.  
-Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
+When you want to hide the form label, use screen reader friendly CSS. Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
 
 ```css
 .screen-reader-text {
@@ -139,15 +151,50 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 ```
 <!-- prettier-ignore-end -->
 
+##### More Info
+
+-   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+-   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
 ---
 
 ### 5) Empty buttons
 
 :bar_chart: 28.7% of homepages in 2020
 
+For the purposes of this guide, buttons are similar to anchor tags (links) and also need text. If your button needs to link to something, you're better off using an anchor and styling it like a button.
+
+There are three button types; submit and reset (forms), and button. The `type="button"` attribute doesn't have default functionality, so you can have it do just about anything.
+
 ```html
-<button>Read More</button>
+<button type="button">Read More</button>
 ```
+
+And like links, it's common to use icon fonts and SVGs with the button element. Make sure to add button text and hide it with screen reader friendly CSS.
+
+```css
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    clip: rect(0 0 0 0);
+}
+```
+
+<!-- prettier-ignore-start -->
+```html
+<button>
+    <span class="screen-reader-text">Read more</span>
+    <svg aria-label="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/></svg>
+</button
+```
+<!-- prettier-ignore-end -->
+
+##### More Info
+
+-   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+-   https://www.w3.org/TR/wai-aria-1.1/#aria-label
 
 ---
 
@@ -159,12 +206,9 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 <html lang="en"></html>
 ```
 
----
+##### More Info
 
-### Resources
-
--   https://webaim.org/projects/million/
--   https://webaim.org/resources/contrastchecker/
+-   https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
 
 ---
 
