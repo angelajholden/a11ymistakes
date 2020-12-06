@@ -111,7 +111,7 @@ Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribut
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
 ```
 
-When you want to hide the form label, use screen reader friendly CSS. Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
+When you want to hide the form label, use screen reader friendly CSS.
 
 ```html
 <label class="screen-reader-text" for="name">Full Name</label>
