@@ -45,12 +45,11 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 
 #### Correct - image with alt text
 
+<!-- prettier-ignore-start -->
 ```html
-<img
-    src="https://picsum.photos/840/472"
-    alt="Random placeholder photo from Lorem Picsum"
-/>
+<img src="https://picsum.photos/840/472" alt="Random placeholder photo from Lorem Picsum" />
 ```
+<!-- prettier-ignore-end -->
 
 #### Also correct - image with alt null value
 
@@ -72,9 +71,32 @@ Alt text attributes can be included but have a null value, and screen readers wi
 
 :bar_chart: 59.9% of homepages in 2020
 
+By default the anchor element href attribute takes a URL, media file, telephone number or email address. Links should also have text so screen readers tell the user what they are clicking on. Links shouldn't just say Read more, Learn more, etc. That text does not tell users where the link will take them.
+
 ```html
-<a href="https://webaim.org">Web AIM</a>
+<a href="https://webaim.org">Read more on WebAIM</a>
 ```
+
+It's common to add icon fonts or SVGs to links and omit the text. Wrap the link text in a `<span></span>` and hide it with screen reader friendly CSS. Add `aria-label="hidden"` so screen readers don't read the SVG. Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
+
+```css
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    clip: rect(0 0 0 0);
+}
+```
+
+<!-- prettier-ignore-start -->
+```html
+<a href="https://webaim.org">
+    <span class="screen-reader-text">Read more on WebAIM</span>
+    <svg aria-label="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/></svg>
+</a>
+```
+<!-- prettier-ignore-end -->
 
 ---
 
@@ -109,12 +131,13 @@ Using `display: none;` or `visibility: hidden;` removes it from the DOM, and scr
 
 If you aren't hiding form labels, they can also be wrapped around the form element.
 
+<!-- prettier-ignore-start -->
 ```html
-<label for="name"
-    >Full Name
+<label for="name">Full Name
     <input id="name" type="text" name="fullname" placeholder="Full Name" />
 </label>
 ```
+<!-- prettier-ignore-end -->
 
 ---
 
