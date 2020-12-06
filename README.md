@@ -37,10 +37,6 @@ From the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/
 | Large Text (bold font weight)    | 14pt  | 18.66px |
 | Large Text (normal font weight)  | 18pt  |  24px   |
 
-##### More Info
-
--   https://css-tricks.com/accessible-font-sizing-explained/
-
 ---
 
 ### 2) Missing alternative text for images
@@ -68,10 +64,6 @@ Alt text attributes can be included but have a null value, and screen readers wi
 ```html
 <img src="https://picsum.photos/840/472" />
 ```
-
-##### More Info
-
--   https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt
 
 ---
 
@@ -106,11 +98,6 @@ It's common to add icon fonts or SVGs to links and omit the text. Wrap the link 
 ```
 <!-- prettier-ignore-end -->
 
-##### More Info
-
--   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
--   https://www.w3.org/TR/wai-aria-1.1/#aria-label
-
 ---
 
 ### 4) Missing form input labels
@@ -126,16 +113,6 @@ Use the `for=""` attribute on the `<label>`, and use a matching `id=""` attribut
 
 When you want to hide the form label, use screen reader friendly CSS. Using `display: none;` or `visibility: hidden;` removes it from the DOM, and screen readers won't read elements styled that way.
 
-```css
-.screen-reader-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1;
-    clip: rect(0 0 0 0);
-}
-```
-
 ```html
 <label class="screen-reader-text" for="name">Full Name</label>
 <input id="name" type="text" name="fullname" placeholder="Full Name" />
@@ -150,11 +127,6 @@ If you aren't hiding form labels, they can also be wrapped around the form eleme
 </label>
 ```
 <!-- prettier-ignore-end -->
-
-##### More Info
-
--   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
--   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 
 ---
 
@@ -172,16 +144,6 @@ There are three button types; submit and reset (forms), and button. The `type="b
 
 And like links, it's common to use icon fonts and SVGs with the button element. Make sure to add button text and hide it with screen reader friendly CSS.
 
-```css
-.screen-reader-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1;
-    clip: rect(0 0 0 0);
-}
-```
-
 <!-- prettier-ignore-start -->
 ```html
 <button>
@@ -190,11 +152,6 @@ And like links, it's common to use icon fonts and SVGs with the button element. 
 </button
 ```
 <!-- prettier-ignore-end -->
-
-##### More Info
-
--   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
--   https://www.w3.org/TR/wai-aria-1.1/#aria-label
 
 ---
 
@@ -205,10 +162,6 @@ And like links, it's common to use icon fonts and SVGs with the button element. 
 ```html
 <html lang="en"></html>
 ```
-
-##### More Info
-
--   https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
 
 ---
 
