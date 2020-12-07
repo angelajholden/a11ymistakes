@@ -58,7 +58,7 @@ module.exports = function (grunt) {
                     hostname: "127.0.0.1",
                     port: "8000",
                     useAvailablePort: true,
-                    base: "dist",
+                    base: "./",
                     livereload: true,
                 },
             },
